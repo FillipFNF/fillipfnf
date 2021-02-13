@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<style>
+input, select {
+
+    background-color: #19172C;
+    color:#EC7BF5;
+    font-family: "Open Sans", sans-serif;
+    padding: 0.30rem 0.55rem;
+    border : 1px solid ;
+    border-radius: 15px;
+}
+
+h2 {
+    font-size: larger;
+    font-family: "Open Sans", sans-serif;
+}
+</style>
+<html style="text-align: center">
+<head>
+    <title>Login page</title>
+</head>
+
+<h1 style="text-align: center">FillipFNF</h1>
+<h2 style="text-align: center">password page</h2>
+<body style="background-color: #19172C;">
+<form style="text-align: center">
+    <label for="pswd"> </label>
+
+    <input type="password" id="pswd">
+    <input style="background-color: #19172C" type="button" value="Continue"  onclick="checkPswd();" />
+</form>
+
+
+
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "WaV3 1";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="OOS.html";
+        }
+        else{
+            alert("wrong password.");
+        }
+    }
+
+</script>
+</body>
+</html>
